@@ -15,7 +15,7 @@ interface Course {
 
 const Feature_Course = () => {
   return (
-    <div className="w-full bg-white mb-20">
+    <div className="w-full bg-white py-8 md:py-12 lg:py-20">
       <div className="container">
         <div className="flex justify-center">
           <div className="w-full xl:w-5/12 text-center">

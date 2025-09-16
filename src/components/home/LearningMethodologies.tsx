@@ -1,6 +1,6 @@
 export default function LearningMethodologies() {
   return (
-    <section className="my-20 bg-white">
+    <section className="py-8 md:py-12 lg:py-20 bg-white">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12">

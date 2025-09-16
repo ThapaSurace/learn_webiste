@@ -9,7 +9,7 @@ import {
 
 export default function EventGrid() {
   return (
-    <div className="container my-32">
+    <div className="container py-10 md:py-16 lg:py-20">
       {/* Section Header */}
       <div className="text-center mb-12">
         <p className="text-slate-600 font-semibold uppercase mb-2">Our Journey</p>

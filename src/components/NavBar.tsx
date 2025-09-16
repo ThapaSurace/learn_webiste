@@ -13,25 +13,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
 
-// -----------------
-// Helper Components
-// -----------------
-const NavLinks: React.FC = () => (
-  <ul className="flex flex-col gap-4 text-lg">
-    <li>
-      <Link to="/" className="hover:text-orange-500">Home</Link>
-    </li>
-    <li>
-      <Link to="/about" className="hover:text-orange-500">About</Link>
-    </li>
-    <li>
-      <Link to="/services" className="hover:text-orange-500">Services</Link>
-    </li>
-    <li>
-      <Link to="/contact" className="hover:text-orange-500">Contact</Link>
-    </li>
-  </ul>
-);
 
 interface MenuProps {
   textColor: string;
@@ -119,9 +100,9 @@ const NavBar: React.FC = () => {
             showTopNav ? "bg-white shadow" : "bg-transparent"
           }`}
         >
-          <div className="container flex justify-between items-center py-6">
+          <div className="container flex justify-between items-center py-4">
            <Link to="/">
-              <img src={logo} alt="logo" className="w-40 bg-white rounded-md p-4" />
+              <img src={logo} alt="logo" className=" w-32 sm:w-40 md:w-48 bg-white rounded-md p-4" />
            </Link>
 
             {/* Desktop Nav */}
@@ -150,25 +131,92 @@ const NavBar: React.FC = () => {
       </AnimatePresence>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ y: -200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -200, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed top-16 left-0 w-full bg-white md:hidden shadow-lg z-50"
+      {/* Mobile Menu */}
+{/* Mobile Menu */}
+<AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex flex-col items-center justify-center"
+    >
+      <motion.div
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -50, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white w-full h-full flex flex-col items-center justify-center gap-8 p-8 overflow-y-auto"
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setMenuOpen(false)}
+          className="absolute top-6 right-6 text-gray-700 hover:text-orange-500 cursor-pointer"
+        >
+          <X size={32} />
+        </button>
+
+        {/* Main Links */}
+        
+
+        {/* Divider */}
+        {/* <hr className="w-3/4 border-gray-300 my-6" /> */}
+
+        {/* Courses Section */}
+        <div className="flex flex-col items-center gap-4 text-gray-700 text-lg">
+          <h3 className="text-orange-500 font-semibold text-2xl mb-2">
+            Courses
+          </h3>
+          <Link
+            to="/little-coder"
+            onClick={() => setMenuOpen(false)}
+            className="px-6 py-3 rounded hover:bg-orange-500 hover:text-white transition"
           >
-            <div className="p-6 text-gray-700 flex flex-col gap-4">
-              <NavLinks />
-              {/* Mobile courses menu */}
-              <Link to="/little-coder" className="hover:text-orange-500">Little Coders</Link>
-              <Link to="/code-junior" className="hover:text-orange-500">Coder Junior</Link>
-              <Link to="/code-master" className="hover:text-orange-500">Coder Master</Link>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            Little Coders
+          </Link>
+          <Link
+            to="/code-junior"
+            onClick={() => setMenuOpen(false)}
+            className="px-6 py-3 rounded hover:bg-orange-500 hover:text-white transition"
+          >
+            Coder Junior
+          </Link>
+          <Link
+            to="/code-master"
+            onClick={() => setMenuOpen(false)}
+            className="px-6 py-3 rounded hover:bg-orange-500 hover:text-white transition"
+          >
+            Coder Master
+          </Link>
+        </div>
+
+        {/* Maker Camp Section */}
+        <div className="flex flex-col items-center gap-4 text-gray-700 text-lg mt-6">
+          <h3 className="text-orange-500 font-semibold text-2xl mb-2">
+            Maker Camp
+          </h3>
+          <Link
+            to="/maker-camp"
+            onClick={() => setMenuOpen(false)}
+            className="px-6 py-3 rounded hover:bg-orange-500 hover:text-white transition"
+          >
+            Overview
+          </Link>
+          <Link
+            to="/maker-camp/projects"
+            onClick={() => setMenuOpen(false)}
+            className="px-6 py-3 rounded hover:bg-orange-500 hover:text-white transition"
+          >
+            Projects
+          </Link>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+
     </>
   );
 };

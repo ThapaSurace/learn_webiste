@@ -22,10 +22,10 @@ export default function CodeLittle() {
       <CourseList courses={courses} levelColors={levelColors} />
 
       {/* faq */}
-      <div className="container my-20">
+      <div className="container mt-20 mb-28">
          {/* Section Header */}
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-blue-950">Frequently Asked <br/ > Questions</h2>
+          <h2 className="text-5xl font-bold text-blue-950">Frequently Asked <br/ > Questions</h2>
           <div className="w-20 h-[1.5px] bg-orange-500 mx-auto mt-4 rounded"></div>
         </div>
         <FaqAccordion items={littleCoderFaqs} />
