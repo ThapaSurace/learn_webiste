@@ -4,6 +4,8 @@ import LearningMethodologies from "@/components/home/LearningMethodologies";
 import EventGrid from "@/components/home/EventGrid";
 import Banners from "@/components/home/Banners";
 import AboutSection from "@/components/home/AboutSection";
+import { InfiniteMovingCardsDemo } from "@/components/home/Testominal";
+
 
 export default function HomePage() {
   return (
@@ -22,6 +24,8 @@ export default function HomePage() {
 
       {/* why us */}
       <LearningMethodologies />
+
+      <InfiniteMovingCardsDemo />
 
       {/* event grid */}
       <EventGrid />
