@@ -1,3 +1,12 @@
+import python_course from "../assets/images/little coders/course-advance-python.png"
+import adv_python_course from "../assets/images/little coders/course-advance-python.png"
+import js_course from "../assets/images/little coders/course-javascript.png"
+import scratch_course from "../assets/images/little coders/course-scratch-jr.png"
+import course_html from "../assets/images/little coders/course-html-css.png"
+import course_mysql from "../assets/images/little coders/course-mysql.png"
+
+
+
 interface Course {
   level: number;
   title: string;
@@ -18,7 +27,7 @@ export const courses: Course[] = [
       "Understand sequencing and loops",
       "Demonstrate creativity through simple animated stories and games",
     ],
-    image: "img/course-images/course-scratch-jr.png",
+    image: python_course,
   },
   {
     level: 2,
@@ -30,7 +39,7 @@ export const courses: Course[] = [
       "Understand conditional, loops, variables and event handling",
       "Develop interactive games and apps",
     ],
-    image: "img/course-images/course-scratch.png",
+    image: course_html,
   },
   {
     level: 3,
@@ -42,7 +51,7 @@ export const courses: Course[] = [
       "Practice advance block coding",
       "Develop real-world android mobile apps",
     ],
-    image: "img/course-images/course-andrioid-1.png",
+    image: course_mysql,
   },
   {
     level: 4,
@@ -54,7 +63,7 @@ export const courses: Course[] = [
       "Demonstrate creativity through digital doodles",
       "Develop simple console applications",
     ],
-    image: "img/course-images/course-python-turtle.png",
+    image: js_course,
   },
   {
     level: 5,
@@ -66,6 +75,6 @@ export const courses: Course[] = [
       "Understand the fundamentals of web styling using CSS",
       "Develop web pages using text formatting, graphics, audio & video",
     ],
-    image: "img/course-images/course-html-css.png",
+    image: scratch_course,
   },
 ];

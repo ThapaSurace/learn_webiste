@@ -1,11 +1,5 @@
 import HeroSection from "../components/home/HeroSection";
-import scratch from "../assets/images/banners/scratch.png";
-import scratch_jr from "../assets/images/banners/scratch-junior.png";
-import android from "../assets/images/banners/android.png";
-import html_css from "../assets/images/banners/html-css.png";
-import microbit from "../assets/images/banners/microbit.png";
-import python from "../assets/images/banners/python.png";
-import JavaScript from "../assets/images/banners/JavaScript.png";
+
 import learningImg from "../assets/images/home/learning_img.png";
 import stemCertificate from "../assets/images/home/stem-certificate.png";
 
@@ -14,37 +8,15 @@ import Feature_Course from "../components/home/Feature_Course";
 import { Button } from "../components/ui/button";
 import LearningMethodologies from "@/components/home/LearningMethodologies";
 import EventGrid from "@/components/home/EventGrid";
-
-const banners = [
-  { src: scratch, alt: "Scratch" },
-  { src: scratch_jr, alt: "Scratch Jr" },
-  { src: android, alt: "Android" },
-  { src: html_css, alt: "HTML & CSS" },
-  { src: microbit, alt: "Micro:bit" },
-  { src: python, alt: "Python" },
-  { src: JavaScript, alt: "JavaScript" },
-];
+import Banners from "@/components/home/Banners";
 
 export default function HomePage() {
   return (
-    <div className="min-h-[200vh]">
+    <div className="">
       <HeroSection />
 
       {/* banners */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 container mt-32">
-        {banners.map((banner, index) => (
-          <div
-            key={index}
-            className="rounded-lg p-1 shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
-          >
-            <img
-              src={banner.src}
-              alt={banner.alt}
-              // className="w-full h-32 object-cover"
-            />
-          </div>
-        ))}
-      </div>
+      <Banners />
 
       {/* about us */}
       <section className="py-16 bg-white my-20">
@@ -56,16 +28,20 @@ export default function HomePage() {
                 src={learningImg}
                 alt="learning image"
                 className="w-full h-auto rounded-lg shadow"
+                loading="lazy"
               />
             </div>
 
             {/* Right Text */}
             <div className="w-full basis-1/2">
               <div className="space-y-4">
-                <h5 className="text-teal-600 font-semibold uppercase">
+                <div className="flex items-center gap-2">
+                  <div className="w-10 h-[1.5px] bg-primary rounded"></div>
+                  <h5 className="text-slate-600 font-semibold uppercase text-lg">
                   About Us
                 </h5>
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
+                </div>
+                <h2 className="text-4xl font-extrabold text-header">
                   Learn, Code & Explore
                 </h2>
                 <p className="text-gray-600">
@@ -75,12 +51,11 @@ export default function HomePage() {
                   to explore their future in this rapidly growing technology
                   driven world.
                 </p>
-                <a
-                  href="/our-story"
-                  className="inline-block px-6 py-3 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition"
+                <Button
+                size="lg"
                 >
                   Read More About Us
-                </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -100,14 +75,20 @@ export default function HomePage() {
                 src={stemCertificate}
                 alt="STEM Accredited"
                 className="max-w-full h-auto"
+                loading="lazy"
               />
             </div>
 
             {/* Text */}
             <div className="lg:w-1/2">
               <div className="space-y-4 text-center lg:text-left">
-                <h5 className="text-orange-500 font-semibold">Why Us?</h5>
-                <h2 className="text-3xl font-bold text-gray-800">
+                <div className="flex items-center gap-2">
+                  <div className="w-10 h-[1.5px] bg-primary rounded"></div>
+                  <h5 className="text-slate-600 font-semibold uppercase text-lg">
+                  Why Us?
+                </h5>
+                </div>
+                <h2 className="text-4xl font-extrabold text-header">
                   Our Recognitions
                 </h2>
                 <p className="text-gray-600">

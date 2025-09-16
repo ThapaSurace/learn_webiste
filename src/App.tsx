@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import CodeLittle from "./pages/CodeLittle";
 import CodeJunior from "./pages/CodeJunior";
 import CodeMater from "./pages/CodeMater";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/code-junior" element={<CodeJunior />} />
         <Route path="/code-master" element={<CodeMater />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,13 +1,18 @@
+import python_course from "../assets/images/little coders/course-advance-python.png"
+import adv_python_course from "../assets/images/little coders/course-advance-python.png"
+import js_course from "../assets/images/little coders/course-javascript.png"
+import scratch_course from "../assets/images/little coders/course-scratch-jr.png"
+import course_html from "../assets/images/little coders/course-html-css.png"
+import course_mysql from "../assets/images/little coders/course-mysql.png"
+
+
 interface Course {
   level: number;
   title: string;
   classes: string;
   duration: string;
   outcomes: string[];
-  images: {
-    desktop: string;
-    mobile: string;
-  };
+  image: string
 }
 
 export const courses: Course[] = [
@@ -21,10 +26,7 @@ export const courses: Course[] = [
       "Understand sequencing and loops",
       "Demonstrate creativity through simple animated stories and games",
     ],
-    images: {
-      desktop: "img/LC/level1.png",
-      mobile: "img/LC/level1.jpg",
-    },
+    image: python_course
   },
   {
     level: 2,
@@ -36,10 +38,7 @@ export const courses: Course[] = [
       "Practice advance block coding",
       "Develop real-world android mobile apps",
     ],
-    images: {
-      desktop: "img/course-images/course-android-2.png",
-      mobile: "img/course-images/course-android-2.png",
-    },
+    image: js_course
   },
   {
     level: 3,
@@ -51,10 +50,7 @@ export const courses: Course[] = [
       "Perceive the fundamentals Python and its core concepts",
       "Understand graphical user interface development",
     ],
-    images: {
-      desktop: "img/course-images/course-python-turtle.png",
-      mobile: "img/course-images/course-python-turtle.png",
-    },
+    image: scratch_course
   },
   {
     level: 4,
@@ -66,10 +62,7 @@ export const courses: Course[] = [
       "Ability to use Packaging, JSON and File Handling",
       "Develop real-world desktop / software applications",
     ],
-    images: {
-      desktop: "img/course-images/course-python-gui.png",
-      mobile: "img/course-images/course-python-gui.png",
-    },
+    image: course_html,
   },
   {
     level: 5,
@@ -81,10 +74,7 @@ export const courses: Course[] = [
       "Understand the fundamentals of web styling using CSS",
       "Develop web pages using text formatting, graphics, audio & video",
     ],
-    images: {
-      desktop: "img/course-images/course-html-css.png",
-      mobile: "img/course-images/course-html-css.png",
-    },
+    image: course_mysql,
   },
   {
     level: 6,
@@ -96,9 +86,6 @@ export const courses: Course[] = [
       "Ability to use DOMs, Events, Functions and Objects",
       "Develop interactive websites",
     ],
-    images: {
-      desktop: "img/course-images/course-javascript.png",
-      mobile: "img/course-images/course-javascript.png",
-    },
+    image: adv_python_course,
   },
 ];
