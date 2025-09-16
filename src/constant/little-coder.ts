@@ -1,5 +1,4 @@
 import python_course from "../assets/images/little coders/course-advance-python.png"
-import adv_python_course from "../assets/images/little coders/course-advance-python.png"
 import js_course from "../assets/images/little coders/course-javascript.png"
 import scratch_course from "../assets/images/little coders/course-scratch-jr.png"
 import course_html from "../assets/images/little coders/course-html-css.png"
