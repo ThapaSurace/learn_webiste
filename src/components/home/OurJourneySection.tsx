@@ -1,9 +1,3 @@
-import image2 from "../../assets/images/home/journey_section/image2.jpg";
-import image3 from "../../assets/images/home/journey_section/image3.jpg";
-import image4 from "../../assets/images/home/journey_section/image4.jpg";
-import image5 from "../../assets/images/home/journey_section/image5.jpg";
-import image1 from "../../assets/images/home/journey_section/img1.jpg"
-
 const OurjourneySection = () => {
   return (
     <div className=" min-h-[50vh] py-8 md:py-12 lg:py-20">
@@ -32,7 +26,7 @@ const OurjourneySection = () => {
             {/* Curriculum */}
             <div className="relative col-span-2 rounded-2xl overflow-hidden h-64 group cursor-pointer">
               <img
-                src={image4}
+                src="/images/home/journey-section/image4.jpg"
                 alt="AI Learning Curriculum"
                 className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-110"
               />
@@ -44,7 +38,7 @@ const OurjourneySection = () => {
             {/* AI Tools */}
             <div className="relative rounded-2xl overflow-hidden h-64 group cursor-pointer">
               <img
-                src={image1}
+                src="/images/home/journey-section/image1.jpg"
                 alt="AI Tools and Resources"
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
@@ -56,7 +50,7 @@ const OurjourneySection = () => {
             {/* Hands-on Projects */}
             <div className="relative rounded-2xl overflow-hidden h-64 group cursor-pointer">
               <img
-                src={image3}
+                src="/images/home/journey-section/image3.jpg"
                 alt="Hands-on AI Projects"
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
@@ -68,7 +62,7 @@ const OurjourneySection = () => {
             {/* Student Development */}
             <div className="relative rounded-2xl overflow-hidden h-64 group cursor-pointer">
               <img
-                src={image5}
+                src="/images/home/journey-section/image5.jpg"
                 alt="Student AI Development Program"
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
@@ -82,7 +76,7 @@ const OurjourneySection = () => {
             {/* Educational Kits */}
             <div className="relative rounded-2xl overflow-hidden h-64 group cursor-pointer">
               <img
-                src={image2}
+                src="/images/home/journey-section/image2.jpg"
                 alt="AI Educational Kits"
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
               />

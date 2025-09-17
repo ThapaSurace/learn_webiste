@@ -1,11 +1,5 @@
 import stem from "../../assets/stem-intro-logo.png";
 import { Button } from "../ui/button";
-// import hero from "../../assets/images/home/hero-img.png";
-// import { motion } from "framer-motion";
-
-import hero1 from "../../assets/images/home/journey_section/image2.jpg"
-import hero2 from "../../assets/images/home/journey_section/image4.jpg"
-import hero3 from "../../assets/images/home/journey_section/image3.jpg"
 
 // import { Bell, Star } from "lucide-react"
 
@@ -106,12 +100,12 @@ const HeroSection = () => {
           {/* Big Left Block */}
           <div className="bg-yellow-200 p-6 rounded-xl shadow flex flex-col gap-10 items-center justify-center row-span-2">
             <img
-              src={hero1}
+              src="/images/home/journey-section/image1.jpg"
               alt="Hero 1"
               className="rounded-lg w-full object-contain"
             />
             <img
-              src={hero1}
+              src="/images/home/journey-section/image1.jpg"
               alt="Hero 1"
               className="rounded-lg w-full object-contain"
             />
@@ -120,7 +114,7 @@ const HeroSection = () => {
           {/* Top Right */}
           <div className="bg-blue-300 p-6 rounded-xl shadow flex items-center justify-center">
             <img
-              src={hero2}
+              src="/images/home/journey-section/image2.jpg"
               alt="Hero 2"
               className="rounded-lg w-full object-contain"
             />
@@ -129,7 +123,7 @@ const HeroSection = () => {
           {/* Bottom Right */}
           <div className="bg-pink-300 p-6 rounded-xl shadow flex items-center justify-center">
             <img
-              src={hero3}
+              src="/images/home/journey-section/image3.jpg"
               alt="Hero 3"
               className="rounded-lg w-full object-contain"
             />
