@@ -134,10 +134,10 @@
   }
 }
 
-
-.container{
-  @apply max-w-6xl mx-auto px-4
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl;
 }
+
 
 .heading__font{
   font-family: "Bricolage Grotesque", sans-serif;

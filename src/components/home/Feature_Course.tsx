@@ -19,10 +19,10 @@ const Feature_Course = () => {
       <div className="container">
         <div className="flex justify-center">
           <div className="w-full xl:w-5/12 text-center">
-            <p className="text-slate-600 font-semibold uppercase mb-2">
+            <p className="text-sm sm:text-base text-slate-600 font-semibold uppercase mb-2">
               Featured Courses
             </p>
-            <h2 className="text-4xl font-extrabold text-header">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-header">
               LearnWare Programs
             </h2>
             <div className="w-32 h-[1px] bg-orange-500 mx-auto mt-4 rounded"></div>
