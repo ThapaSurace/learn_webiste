@@ -1,6 +1,6 @@
 const OurjourneySection = () => {
   return (
-    <div className=" min-h-[50vh] py-8 md:py-12 lg:py-20">
+    <div className=" min-h-[50vh] py-8 md:py-12 lg:py-16">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12 px-4 md:px-0">

@@ -5,6 +5,7 @@ import EventGrid from "@/components/home/EventGrid";
 import Banners from "@/components/home/Banners";
 import { InfiniteMovingCardsDemo } from "@/components/home/Testominal";
 import OurjourneySection from "@/components/home/OurJourneySection";
+import WhyUsSection from "@/components/home/WhyUsSection";
 
 
 export default function HomePage() {
@@ -26,6 +27,9 @@ export default function HomePage() {
       <Feature_Course />
 
       {/* why us */}
+
+      <WhyUsSection />
+      
       <LearningMethodologies />
 
       <InfiniteMovingCardsDemo />
