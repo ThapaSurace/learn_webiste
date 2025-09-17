@@ -80,12 +80,12 @@ const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => setShowTopNav(window.scrollY > 100);
+    const handleScroll = () => setShowTopNav(window.scrollY > 90);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const textColor = showTopNav ? "text-slate-700" : "text-white";
+  const textColor = showTopNav ? "text-slate-700" : "text-slate-700";
 
   return (
     <>
@@ -115,8 +115,8 @@ const NavBar: React.FC = () => {
               </NavigationMenu>
             </div>
 
-            <Button className="bg-orange-500 text-white opacity-0">
-              Get Started
+            <Button size="lg" className="bg-primary text-white opacity-0">
+              Get Touch
             </Button>
 
             {/* Mobile Menu Button */}

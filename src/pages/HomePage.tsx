@@ -3,8 +3,8 @@ import Feature_Course from "../components/home/Feature_Course";
 import LearningMethodologies from "@/components/home/LearningMethodologies";
 import EventGrid from "@/components/home/EventGrid";
 import Banners from "@/components/home/Banners";
-import AboutSection from "@/components/home/AboutSection";
 import { InfiniteMovingCardsDemo } from "@/components/home/Testominal";
+import OurjourneySection from "@/components/home/OurJourneySection";
 
 
 export default function HomePage() {
@@ -17,7 +17,10 @@ export default function HomePage() {
       <Banners />
 
       {/* about us */}
-      <AboutSection />
+      {/* <AboutSection /> */}
+
+      {/* AI info section */}
+      <OurjourneySection />
 
       {/* featured course */}
       <Feature_Course />
