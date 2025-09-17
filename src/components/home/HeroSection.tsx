@@ -40,7 +40,7 @@ import { Button } from "../ui/button";
 //           <img
 //             src={hero}
 //             alt="Hero"
-//             className="w-full max-w-md object-contain drop-shadow-2xl"
+//             className="w-full max-w-md object-cover drop-shadow-2xl"
 //           />
 //         </motion.div>
 //       </div>
@@ -48,31 +48,30 @@ import { Button } from "../ui/button";
 //   );
 // }
 
-
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-32 pb-10">
+    <section className="relative bg-slate-100/50 pt-40 pb-10 min-h-screen">
       {/* Container */}
-      <div className="container flex flex-col md:flex-row md:items-center justify-between gap-10 md:gap-6">
-        
+      <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
         <div className="flex-1 flex flex-col items-center md:items-start">
           {/* Logo */}
-          <img 
-            src={stem} 
-            alt="Logo" 
-            className="w-20 sm:w-28 bg-slate-800 py-2 px-6 rounded-md shadow-md mb-4" 
+          <img
+            src={stem}
+            alt="Logo"
+            className="w-20 sm:w-32 bg-slate-800 py-2 px-6 rounded-md shadow-md mb-4"
           />
 
           {/* Heading */}
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
-            KIDS STEM & CODING <br />
-            FOR <span className="text-primary">REAL WORLD</span>
+            KIDS STEM & CODING FOR <br />
+            <span className="text-primary">REAL WORLD</span>
           </h1>
 
           {/* Paragraph */}
-          <p className="text-sm sm:text-base lg:text-lg text-center md:text-left text-slate-500 max-w-md my-6">
-            LearnWare sets your child up for real-world success with engaging online and offline STEM & Coding programs designed by experts.
+          <p className="text-sm sm:text-base lg:text-lg text-center md:text-left text-slate-500 my-6 max-w-lg">
+            LearnWare sets your child up for real-world success with engaging
+            online and offline STEM & Coding programs designed by experts.
           </p>
 
           {/* CTA Button */}
@@ -98,40 +97,40 @@ const HeroSection = () => {
         {/* RIGHT SIDE (Image Grid) */}
         <div className="flex-1 grid grid-cols-2 gap-6">
           {/* Big Left Block */}
-          <div className="bg-yellow-200 p-6 rounded-xl shadow flex flex-col gap-10 items-center justify-center row-span-2">
+          <div className="bg-yellow-200 p-4 rounded-xl shadow flex flex-col gap-4 items-center justify-center row-span-2">
             <img
               src="/images/home/journey-section/image1.jpg"
               alt="Hero 1"
-              className="rounded-lg w-full object-contain"
+              className="rounded-lg w-full h-auto max-h-[350px] object-cover"
             />
             <img
               src="/images/home/journey-section/image1.jpg"
               alt="Hero 1"
-              className="rounded-lg w-full object-contain"
+              className="rounded-lg w-full h-auto max-h-[350px] object-cover"
             />
           </div>
 
           {/* Top Right */}
-          <div className="bg-blue-300 p-6 rounded-xl shadow flex items-center justify-center">
+          <div className="bg-blue-300 p-4 rounded-xl shadow flex items-center justify-center">
             <img
               src="/images/home/journey-section/image2.jpg"
               alt="Hero 2"
-              className="rounded-lg w-full object-contain"
+              className="rounded-lg w-full h-auto max-h-[170px] object-cover"
             />
           </div>
 
           {/* Bottom Right */}
-          <div className="bg-pink-300 p-6 rounded-xl shadow flex items-center justify-center">
+          <div className="bg-pink-300 p-4 rounded-xl shadow flex items-center justify-center">
             <img
               src="/images/home/journey-section/image3.jpg"
               alt="Hero 3"
-              className="rounded-lg w-full object-contain"
+              className="rounded-lg w-full h-auto max-h-[170px] object-cover"
             />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

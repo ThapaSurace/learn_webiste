@@ -102,7 +102,7 @@ const NavBar: React.FC = () => {
         >
           <div className="container flex justify-between items-center py-4">
            <Link to="/">
-              <img src={logo} alt="logo" className=" w-32 sm:w-40 md:w-48 bg-white rounded-md p-4" />
+              <img src={logo} alt="logo" className=" w-32 sm:w-40 md:w-56 bg-white rounded-md p-4 shadow-md" />
            </Link>
 
             {/* Desktop Nav */}
