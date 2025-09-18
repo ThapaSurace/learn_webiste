@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-40 pb-10 min-h-dvh">
+    <section className="relative bg-slate-100/50 pt-40 pb-10">
       {/* Container */}
       <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
