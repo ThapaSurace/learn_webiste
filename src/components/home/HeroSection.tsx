@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-40 pb-10">
+    <section className="relative bg-slate-100/50 pt-28 md:pt-32 pb-10">
       {/* Container */}
       <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
@@ -16,7 +16,7 @@ const HeroSection = () => {
           />
 
           {/* Heading */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
+          <h1 className="text-center md:text-left text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
             KIDS STEM & CODING FOR <br />
             <span className="text-primary">REAL WORLD</span>
           </h1>
