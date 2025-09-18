@@ -12,7 +12,7 @@ const HeroSection = () => {
           <img
             src={stem}
             alt="Logo"
-            className="w-20 sm:w-32 bg-slate-800 py-2 px-6 rounded-md shadow-md mb-4"
+            className="w-28 sm:w-32 bg-slate-800 py-2 px-6 rounded-md shadow-md mb-4"
           />
 
           {/* Heading */}
