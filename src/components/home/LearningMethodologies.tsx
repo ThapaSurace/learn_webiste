@@ -9,7 +9,7 @@ export default function LearningMethodologies() {
 
   return (
     <section className="py-8 md:py-12 lg:py-16 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-header">
