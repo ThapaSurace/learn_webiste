@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-28 md:pt-32 pb-10">
+    <section className="relative bg-slate-100/50 pt-28 md:pt-40 pb-28">
       {/* Container */}
       <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
@@ -16,7 +16,7 @@ const HeroSection = () => {
           />
 
           {/* Heading */}
-          <h1 className="text-center md:text-left text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
+          <h1 className="text-center md:text-left text-3xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
             KIDS STEM & CODING FOR <br />
             <span className="text-primary">REAL WORLD</span>
           </h1>
@@ -50,32 +50,27 @@ const HeroSection = () => {
         {/* RIGHT SIDE (Image Grid) */}
         <div className="flex-1 grid grid-cols-2 gap-6">
           {/* Big Left Block */}
-          <div className="bg-yellow-200 p-4 rounded-xl shadow flex flex-col gap-4 items-center justify-center row-span-2">
+          <div className="bg-pink-300 p-4 rounded-xl shadow  row-span-2">
             <img
-              src="/images/home/journey-section/image1.jpg"
+              src="/images/home/hero/img1.jpg"
               alt="Hero 1"
-              className="rounded-lg w-full h-auto max-h-[350px] object-cover"
-            />
-            <img
-              src="/images/home/journey-section/image1.jpg"
-              alt="Hero 1"
-              className="rounded-lg w-full h-auto max-h-[350px] object-cover"
+              className="rounded-lg w-full h-full  object-cover"
             />
           </div>
 
           {/* Top Right */}
           <div className="bg-blue-300 p-4 rounded-xl shadow flex items-center justify-center">
             <img
-              src="/images/home/journey-section/image2.jpg"
+              src="/images/home/hero/img3.jpg"
               alt="Hero 2"
               className="rounded-lg w-full h-auto max-h-[170px] object-cover"
             />
           </div>
 
           {/* Bottom Right */}
-          <div className="bg-pink-300 p-4 rounded-xl shadow flex items-center justify-center">
+          <div className="bg-yellow-300 p-4 rounded-xl shadow flex items-center justify-center">
             <img
-              src="/images/home/journey-section/image3.jpg"
+              src="/images/home/hero/img2.jpg"
               alt="Hero 3"
               className="rounded-lg w-full h-auto max-h-[170px] object-cover"
             />
