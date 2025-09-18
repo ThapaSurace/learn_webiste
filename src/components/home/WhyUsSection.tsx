@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function WhyUsSection() {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 py-8 md:py-12 lg:py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Image */}
@@ -32,7 +32,7 @@ export default function WhyUsSection() {
               </h2>
 
               <p className="text-sm sm:text-base text-gray-600">
-                LearnWare is proud to say its programs are now accredited by{" "}
+                Young Scientist is proud to say its programs are now accredited by{" "}
                 <a href="#" className="text-blue-600 underline">
                   STEM.org
                 </a>

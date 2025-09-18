@@ -2,7 +2,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="container py-10 md:py-16 lg:py-20">
+    <div className="container py-10 md:py-12 lg:py-16">
       <div className="flex justify-center mb-8">
         <div className="w-full xl:w-5/12 text-center">
           <p className="text-slate-600 font-semibold uppercase mb-2">
