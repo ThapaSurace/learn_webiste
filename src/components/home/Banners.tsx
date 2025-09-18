@@ -16,7 +16,7 @@ export default function Banners() {
   return (
     <div className="w-full mt-16">
       <Marquee
-        gradient={false}        // no fade edges
+        gradient={true}        // no fade edges
         speed={50}              // scroll speed
         pauseOnHover={true}     // stop when hovered
       >
