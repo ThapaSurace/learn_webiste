@@ -1,3 +1,5 @@
+import Marquee from "react-fast-marquee";
+
 const banners = [
   { src: "/images/home/banners/scratch.png", alt: "Scratch" },
   { src: "/images/home/banners/scratch-junior.png", alt: "Scratch Jr" },
@@ -6,24 +8,33 @@ const banners = [
   { src: "/images/home/banners/microbit.png", alt: "Micro:bit" },
   { src: "/images/home/banners/python.png", alt: "Python" },
   { src: "/images/home/banners/JavaScript.png", alt: "JavaScript" },
+  { src: "/images/home/banners/mit.png", alt: "MIT" },
+  { src: "/images/home/banners/thunkable.png", alt: "Thunkable" },
 ];
 
 export default function Banners() {
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6 container mt-10 mb-16">
-      {banners.map((banner, index) => (
-        <div
-          key={index}
-          className="rounded-lg p-1 shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
-        >
-          <img
-            src={banner.src}
-            alt={banner.alt}
-            loading="lazy"
-            className="w-full object-cover"
-          />
-        </div>
-      ))}
+    <div className="w-full mt-16">
+      <Marquee
+        gradient={false}        // no fade edges
+        speed={50}              // scroll speed
+        pauseOnHover={true}     // stop when hovered
+      >
+        {banners.map((banner, index) => (
+          <div
+            key={index}
+            className="mx-6 flex justify-center items-center"
+          >
+            <div className="rounded-lg py-3 px-6  bg-white hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <img
+                src={banner.src}
+                alt={banner.alt}
+                className="h-10 w-auto object-contain"
+              />
+            </div>
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 }

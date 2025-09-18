@@ -17,8 +17,8 @@ const HeroSection = () => {
 
           {/* Heading */}
           <h1 className="text-center md:text-left text-3xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
-            KIDS STEM & CODING FOR <br />
-            <span className="text-primary">REAL WORLD</span>
+            Building Tomorrow’s Innovators Today <br />
+            <span className="text-primary"> Coding | Robotics | AI</span>
           </h1>
 
           {/* Paragraph */}
