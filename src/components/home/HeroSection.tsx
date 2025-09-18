@@ -50,7 +50,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-40 pb-10 min-h-screen">
+    <section className="relative bg-slate-100/50 pt-40 pb-10 min-h-screen min-h-dvh">
       {/* Container */}
       <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
@@ -70,7 +70,7 @@ const HeroSection = () => {
 
           {/* Paragraph */}
           <p className="text-sm sm:text-base lg:text-lg text-center md:text-left text-slate-500 my-6 max-w-lg">
-            LearnWare sets your child up for real-world success with engaging
+            YoungScientist sets your child up for real-world success with engaging
             online and offline STEM & Coding programs designed by experts.
           </p>
 
