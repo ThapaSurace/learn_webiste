@@ -6,13 +6,15 @@ import Banners from "@/components/home/Banners";
 import { InfiniteMovingCardsDemo } from "@/components/home/Testominal";
 import OurjourneySection from "@/components/home/OurJourneySection";
 import WhyUsSection from "@/components/home/WhyUsSection";
-
+// import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
   return (
     <div className="">
       {/* hero section */}
       <HeroSection />
+
+      {/* <StatSection /> */}
 
       {/* banners */}
       <Banners />
@@ -29,7 +31,7 @@ export default function HomePage() {
       {/* why us */}
 
       <WhyUsSection />
-      
+
       <LearningMethodologies />
 
       <InfiniteMovingCardsDemo />
