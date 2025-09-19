@@ -20,7 +20,7 @@ export default function FeaturedCourseCard({ item }: CourseCardProps) {
       <div className="p-6 text-center">
         <h3 className={`text-xl font-bold  mb-2 text-primary`}>{title}</h3>
         <p className={` font-semibold mb-2 text-slate-800`}>{age}</p>
-        <p className="text-slate-500 text-sm mb-4 h-16">{description}</p>
+        <p className="text-slate-500 text-sm mb-4 line-clamp-2">{description}</p>
         <Button
           className="
     text-primary border-primary px-6 py-3 

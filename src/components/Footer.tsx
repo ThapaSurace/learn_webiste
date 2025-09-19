@@ -20,8 +20,33 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative mt-16 bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-100">
-      <div className="container mx-auto px-6 lg:px-8 py-12">
+    <footer className="relative mt-16 bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-100 overflow-hidden">
+      {/* Decorative top wave */}
+      <svg
+        className="absolute -top-10 left-0 w-full h-20 text-primary/10"
+        viewBox="0 0 1440 320"
+        aria-hidden="true"
+      >
+        <path
+          fill="currentColor"
+          d="M0,192L48,170.7C96,149,192,107,288,85.3C384,64,480,64,576,96C672,128,768,192,864,186.7C960,181,1056,107,1152,74.7C1248,43,1344,53,1392,58.7L1440,64V0H0Z"
+        />
+      </svg>
+
+      {/* Subtle dotted background */}
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-10"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern id="footerDots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="#94a3b8" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#footerDots)" />
+      </svg>
+
+      <div className="container relative z-10 mx-auto px-6 lg:px-8 py-12">
         {/* Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           {/* Logo + Intro */}
@@ -65,7 +90,7 @@ export default function Footer() {
                   key={idx}
                   size={40}
                   stroke={1.5}
-                  className={`p-2 rounded-full border border-gray-200 shadow-sm text-[${color}] ${hover} transition-transform duration-200 hover:scale-110 cursor-pointer`}
+                  className={`p-2 rounded-full border border-gray-200 shadow-sm ${hover} transition-transform duration-200 hover:scale-110 cursor-pointer`}
                   style={{ color }}
                 />
               ))}

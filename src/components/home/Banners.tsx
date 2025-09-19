@@ -14,7 +14,7 @@ const banners = [
 
 export default function Banners() {
   return (
-    <div className="w-full mt-16">
+    <div className=" mt-16">
       <Marquee
         gradient={true}        // no fade edges
         speed={50}              // scroll speed
