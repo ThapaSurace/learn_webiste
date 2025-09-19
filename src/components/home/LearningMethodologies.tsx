@@ -12,7 +12,7 @@ export default function LearningMethodologies() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-header">
+          <h2 className="main_heading">
             Learning Methodologies
           </h2>
           <div className="w-20 h-[2px] bg-orange-500 mx-auto mt-4 rounded"></div>

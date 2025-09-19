@@ -3,12 +3,12 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="container py-10 md:py-12 lg:py-16">
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-16">
         <div className="w-full xl:w-5/12 text-center">
           <p className="text-slate-600 font-semibold uppercase mb-2">
             Testimonials
           </p>
-          <h2 className="text-4xl font-extrabold text-header">
+          <h2 className="main_heading">
             What The Parents Say?
           </h2>
           <div className="w-32 h-[1px] bg-orange-500 mx-auto mt-4 rounded"></div>

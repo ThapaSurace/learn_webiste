@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 pt-28 md:pt-40 pb-28">
+    <section className="relative bg-slate-100/50 pt-28 md:pt-40 pb-28 min-h-dvh">
       {/* Container */}
       <div className="container flex flex-col md:flex-row md:items-center gap-10">
         {/* LEFT SIDE CONTENT */}
@@ -16,7 +16,7 @@ const HeroSection = () => {
           />
 
           {/* Heading */}
-          <h1 className="text-center md:text-left text-3xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-gray-700 tracking-tight heading__font">
+          <h1 className="text-center md:text-left text-3xl sm:text-3xl lg:text-5xl font-extrabold leading-tight text-gray-700 tracking-tight font-fredoka">
             Building Tomorrow’s Innovators Today <br />
             <span className="text-primary"> Coding | Robotics | AI</span>
           </h1>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           <Button size="lg">Start Learning Today</Button>
 
           {/* Stats Section */}
-          <div className="flex flex-wrap gap-6 pt-6">
+          {/* <div className="flex flex-wrap gap-6 pt-6">
             <div>
               <p className="text-2xl font-bold text-gray-800">9K+</p>
               <p className="text-gray-500 text-sm">Tutors</p>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               <p className="text-2xl font-bold text-gray-800">210+</p>
               <p className="text-gray-500 text-sm">Subjects</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* RIGHT SIDE (Image Grid) */}

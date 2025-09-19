@@ -22,7 +22,7 @@ const Feature_Course = () => {
             <p className="text-sm sm:text-base text-slate-600 font-semibold uppercase mb-2">
               Featured Courses
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-header">
+            <h2 className="main_heading">
               LearnWare Programs
             </h2>
             <div className="w-32 h-[1px] bg-orange-500 mx-auto mt-4 rounded"></div>

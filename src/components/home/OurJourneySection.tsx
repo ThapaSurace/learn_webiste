@@ -7,7 +7,7 @@ const OurjourneySection = () => {
           <p className="text-sm sm:text-base font-semibold uppercase mb-2 text-slate-600 tracking-widest">
             Our Journey
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-header">
+          <h2 className="main_heading">
             A Complete Platform for <br /> AI and Robotics Education
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div>

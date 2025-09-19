@@ -13,7 +13,7 @@ export default function EventGrid() {
       {/* Section Header */}
       <div className="text-center mb-12">
         <p className="text-slate-600 font-semibold uppercase mb-2">Our Journey</p>
-        <h2 className="text-4xl font-extrabold text-header">
+        <h2 className="main_heading">
           Latest Events
         </h2>
         <div className="w-20 h-[1.5px] bg-orange-500 mx-auto mt-2 rounded"></div>
