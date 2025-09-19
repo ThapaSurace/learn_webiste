@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-slate-100/50 min-h-screen min-h-[100dvh] pt-36 md:pt-40 pb-28 overflow-hidden">
+    <section className="relative bg-slate-100/50 pt-36 md:pt-40 pb-28 overflow-hidden">
       {/* Large translucent background blob */}
       <svg
         className="absolute -top-32 -left-32 w-[60rem] h-[60rem] text-primary/10 blur-3xl"

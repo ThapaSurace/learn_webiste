@@ -1,7 +1,7 @@
 const StatsSection = () => {
   const stats = [
-    { label: "Founded", value: "2014" },
-    { label: "Learners Transformed & Certified", value: "10000+" },
+    { label: "Founded", value: "2020" },
+    { label: "Learners Transformed & Certified", value: "12000+" },
     { label: "Career-Focused Learning with Global Certifications", value: "100%" },
     { label: "Driving Innovation in Education & Workforce Training", value: "5+ years" },
   ];
