@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Happy+Monkey&family=Merienda:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -116,3 +119,11 @@
 .main_heading{
   @apply text-3xl sm:text-4xl md:text-5xl font-extrabold font-fredoka text-header 
 }
+
+
+
+/* styles/globals.css or any imported CSS file */
+/* .slashed-zero {
+  font-variant-numeric: slashed-zero;
+  font-family: "Fontdiner Swanky", serif;
+} */
