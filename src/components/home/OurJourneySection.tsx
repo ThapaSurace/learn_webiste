@@ -8,7 +8,7 @@ const OurJourneySection = () => {
             Our Journey
           </p>
           <h2 className="main_heading">
-            A Complete Platform for <br /> AI and Robotics Education
+            A Complete Platform for <br className="hidden md:block" /> AI and Robotics Education
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div>
           <p className="mt-6 max-w-3xl mx-auto text-slate-600 leading-relaxed text-base">
