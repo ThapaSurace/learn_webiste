@@ -3,7 +3,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="container py-10 md:py-12 lg:py-16">
-      <div className="flex justify-center mb-16">
+      <div className="flex justify-center mb-10">
         <div className="w-full xl:w-5/12 text-center">
           <p className="text-slate-600 font-semibold uppercase mb-2">
             Testimonials
@@ -28,31 +28,32 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "My son has become far more confident and curious after joining the AI and robotics classes. His problem-solving skills have improved dramatically.",
+    name: "Sunita Shrestha",
+    title: "Mother of a 6th Grade Student",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "The sessions are fun and hands-on, giving my daughter the inspiration to pursue a future in technology.",
+    name: "Binod Adhikari",
+    title: "Father of a Future Programmer",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Working on real projects has helped my children grow in both creativity and leadership.",
+    name: "Maya Gurung",
+    title: "Mother of Two Young Innovators",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Early education in AI and robotics is the best investment we’ve made for our son’s future.",
+    name: "Krishna Thapa",
+    title: "IT Professional & Proud Parent",
+  },
+  {
+    quote:
+      "The curriculum is world-class and the instructors are incredibly supportive, keeping my daughter excited to learn every week.",
+    name: "Laxmi K.C.",
+    title: "Mother of an 8-Year-Old Student",
   },
 ];
