@@ -18,7 +18,7 @@ const Feature_Course = () => {
         {/* Section Header */}
         <div className="flex justify-center">
           <div className="w-full xl:w-5/12 text-center">
-            <p className="text-sm sm:text-base text-primary font-semibold uppercase mb-2 tracking-widest">
+            <p className="text-sm text-primary font-semibold uppercase mb-2">
               Young Scientist Courses
             </p>
             <h2 className="main_heading">Young Scientist Programs</h2>

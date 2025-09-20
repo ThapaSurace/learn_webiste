@@ -8,6 +8,7 @@ import OurjourneySection from "@/components/home/OurJourneySection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import StatsSection from "@/components/home/StatSection";
 import WhyDursikshya from "@/components/home/WhyDursikshya";
+import OurBrandPartners from "@/components/home/OurBrandPartners";
 // import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
@@ -27,6 +28,8 @@ export default function HomePage() {
 
       {/* AI info section */}
       <OurjourneySection />
+
+      <OurBrandPartners />
 
       {/* featured course */}
       <Feature_Course />

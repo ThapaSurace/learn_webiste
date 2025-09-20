@@ -60,8 +60,8 @@ export default function WhyDursikshya() {
                     flex items-center gap-4 cursor-pointer
                     ${
                       selected.id === item.id
-                        ? "border-orange-500 bg-orange-400 shadow-md scale-105"
-                        : "border-gray-200 hover:border-orange-600 hover:bg-orange-50 bg-white"
+                        ? "border-slate-400 bg-gray-700 shadow-md scale-105"
+                        : "border-gray-200 hover:border-slate-400 hover:bg-orange-50 bg-white"
                     }
                   `}
                 >

@@ -4,7 +4,7 @@ const OurJourneySection = () => {
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-14 px-4">
-          <p className="text-sm sm:text-base font-semibold uppercase mb-2 text-primary tracking-widest">
+          <p className="text-sm font-semibold uppercase mb-2 text-primary">
             Our Journey
           </p>
           <h2 className="main_heading">
