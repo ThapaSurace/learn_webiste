@@ -1,374 +1,46 @@
-// import { useEffect, useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { Menu, X } from "lucide-react";
-// import { Button } from "./ui/button";
-// import logo from "../assets/logo.png";
-// import {
-//   NavigationMenu,
-//   NavigationMenuContent,
-//   NavigationMenuItem,
-//   NavigationMenuLink,
-//   NavigationMenuList,
-//   NavigationMenuTrigger,
-// } from "@/components/ui/navigation-menu";
-// import { Link } from "react-router-dom";
-
-// interface MenuProps {
-//   textColor: string;
-// }
-
-
-// const programLinks = [
-//   { name: "Elementary School ( Age 7-10)", href: "/programs/elementary" },
-//   { name: "Middle School (Age 11-13)",  href: "/programs/middle" },
-//   { name: " High School (Age 14-18)", href: "/programs/high" },
-// ];
-
-// const CoursesMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//       Programs
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="">
-//       {programLinks.map((program) => (
-//         <Link to="#" className="w-full min-w-md">
-//           <NavigationMenuLink
-//             key={program.href}
-//             className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center"
-//           >
-//             {program.name}
-//           </NavigationMenuLink>
-//         </Link>
-//       ))}
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-
-// const CampMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//        Camp
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="w-[200px] flex flex-col gap-2">
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Summer Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Winter Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-
-// const CompetitionsMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//        Competitions
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="w-[200px] flex flex-col gap-2">
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Summer Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Winter Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-
-// const SchoolSolutionsMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//        School Solution
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="w-[200px] flex flex-col gap-2">
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Summer Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Winter Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-// const STEAMMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//        STEAM
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="w-[200px] flex flex-col gap-2">
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Summer Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Winter Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-
-// const ScienceMenu: React.FC<MenuProps> = ({ textColor }) => (
-//   <NavigationMenuItem>
-//     <NavigationMenuTrigger
-//       className={`text-base font-semibold hover:text-orange-400 cursor-pointer ${textColor}`}
-//     >
-//        Science
-//     </NavigationMenuTrigger>
-//     <NavigationMenuContent className="w-[200px] flex flex-col gap-2">
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Summer Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//       <Link to="#" className="w-full">
-//         <NavigationMenuLink className="block w-full cursor-pointer hover:bg-orange-300 hover:text-white px-4 py-2 rounded text-center">
-//           Winter Bootcamp
-//         </NavigationMenuLink>
-//       </Link>
-//     </NavigationMenuContent>
-//   </NavigationMenuItem>
-// );
-// // ---------------
-// // Main NavBar
-// // ---------------
-// const NavBar: React.FC = () => {
-//   const [showTopNav, setShowTopNav] = useState<boolean>(false);
-//   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => setShowTopNav(window.scrollY > 90);
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   const textColor = showTopNav ? "text-slate-700" : "text-slate-700";
-
-//   return (
-//     <>
-//       {/* Navbar */}
-//       <AnimatePresence>
-//         <motion.div
-//           initial={{ y: -80, opacity: 0 }}
-//           animate={{ y: 0, opacity: 1 }}
-//           exit={{ y: -80, opacity: 0 }}
-//           transition={{ duration: 0.4 }}
-//           className={`fixed top-0 left-0 w-full z-40 ${
-//             showTopNav ? "bg-white shadow" : "bg-transparent"
-//           }`}
-//         >
-//           <div className="container flex justify-between items-center py-4">
-//             <Link to="/">
-//               <img src={logo} alt="logo" className=" w-36 sm:w-40 md:w-56" />
-//             </Link>
-
-//             {/* Desktop Nav */}
-//             <div className="hidden md:block">
-//               <NavigationMenu viewport={false}>
-//                 <NavigationMenuList>
-//                   <CoursesMenu textColor={textColor} />
-//                   <CampMenu textColor={textColor} />
-//                   <CompetitionsMenu textColor={textColor} />
-//                   <SchoolSolutionsMenu textColor={textColor} />
-//                   <STEAMMenu textColor={textColor} />
-//                   <ScienceMenu textColor={textColor} />
-//                 </NavigationMenuList>
-//               </NavigationMenu>
-//             </div>
-
-//             {/* <Button size="lg" className="bg-primary text-white opacity-0">
-//               Get Touch
-//             </Button> */}
-
-//             {/* Mobile Menu Button */}
-//             <button
-//               onClick={() => setMenuOpen((prev) => !prev)}
-//               className={`md:hidden ${textColor}`}
-//             >
-//               {menuOpen ? <X size={28} /> : <Menu size={28} />}
-//             </button>
-//           </div>
-//         </motion.div>
-//       </AnimatePresence>
-
-//       {/* Mobile Menu */}
-//       {/* Mobile Menu */}
-//       {/* Mobile Menu */}
-//       {/* Mobile Menu */}
-// <AnimatePresence>
-//   {menuOpen && (
-//     <motion.div
-//       initial={{ opacity: 0 }}
-//       animate={{ opacity: 1 }}
-//       exit={{ opacity: 0 }}
-//       transition={{ duration: 0.3 }}
-//       className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex flex-col"
-//     >
-//       <motion.div
-//         initial={{ y: -50, opacity: 0 }}
-//         animate={{ y: 0, opacity: 1 }}
-//         exit={{ y: -50, opacity: 0 }}
-//         transition={{ duration: 0.3 }}
-//         className="bg-white w-full h-full flex flex-col p-8 overflow-y-auto"
-//       >
-//         {/* Close Button */}
-//         <button
-//           onClick={() => setMenuOpen(false)}
-//           className="absolute top-6 right-6 text-gray-700 hover:text-orange-500 cursor-pointer"
-//         >
-//           <X size={32} />
-//         </button>
-
-//         {/* Mobile Nav Links */}
-//         <nav className="flex flex-col gap-6 text-gray-700 text-lg mt-12">
-//           {/* Programs */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">Programs</h3>
-//             {programLinks.map((program) => (
-//               <Link
-//                 key={program.href}
-//                 to={program.href}
-//                 onClick={() => setMenuOpen(false)}
-//                 className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//               >
-//                 {program.name}
-//               </Link>
-//             ))}
-//           </div>
-
-//           {/* Camps */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">Camps</h3>
-//             <Link
-//               to="/camps/summer"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Summer Bootcamp
-//             </Link>
-//             <Link
-//               to="/camps/winter"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Winter Bootcamp
-//             </Link>
-//           </div>
-
-//           {/* Competitions */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">Competitions</h3>
-//             <Link
-//               to="/competitions/local"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Local Events
-//             </Link>
-//             <Link
-//               to="/competitions/global"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Global Challenges
-//             </Link>
-//           </div>
-
-//           {/* School Solutions */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">School Solutions</h3>
-//             <Link
-//               to="/school-solutions"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Overview
-//             </Link>
-//           </div>
-
-//           {/* STEAM */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">STEAM</h3>
-//             <Link
-//               to="/steam"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Explore STEAM
-//             </Link>
-//           </div>
-
-//           {/* Science */}
-//           <div className="flex flex-col gap-2">
-//             <h3 className="text-orange-500 font-semibold text-xl">Science</h3>
-//             <Link
-//               to="/science"
-//               onClick={() => setMenuOpen(false)}
-//               className="px-4 py-2 rounded hover:bg-orange-500 hover:text-white transition"
-//             >
-//               Explore Science
-//             </Link>
-//           </div>
-//         </nav>
-//       </motion.div>
-//     </motion.div>
-//   )}
-// </AnimatePresence>
-
-//     </>
-//   );
-// };
-
-// export default NavBar;
-
-
-
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+
+// --------------------
+// Types
+// --------------------
+interface NavLink {
+  name: string;
+  href: string;
+  children?: NavLink[];
+}
 
 // --------------------
 // Data
 // --------------------
-const programLinks = [
+const programLinks: NavLink[] = [
   { name: "Elementary School (Age 7-10)", href: "/programs/elementary" },
   { name: "Middle School (Age 11-13)", href: "/programs/middle" },
   { name: "High School (Age 14-18)", href: "/programs/high" },
 ];
 
-const campLinks = [
-  { name: "Summer Bootcamp", href: "/camps/summer" },
-  { name: "Winter Bootcamp", href: "/camps/winter" },
+const campLinks: NavLink[] = [
+  {
+    name: "Summer Bootcamp",
+    href: "/camps/summer",
+    children: [
+      { name: "Coding Track", href: "/camps/summer/coding" },
+      { name: "Robotics Track", href: "/camps/summer/robotics" },
+    ],
+  },
+  {
+    name: "Winter Bootcamp",
+    href: "/camps/winter",
+    children: [
+      { name: "AI Track", href: "/camps/winter/ai" },
+      { name: "STEM Track", href: "/camps/winter/stem" },
+    ],
+  },
 ];
 
-const competitionLinks = [
+const competitionLinks: NavLink[] = [
   {
     name: "Online Coding Competition",
     href: "/competitions/discovery-education-online-coding",
@@ -378,7 +50,7 @@ const competitionLinks = [
   { name: "STEM Competition", href: "/competitions/stem" },
 ];
 
-const schoolLinks = [
+const schoolLinks: NavLink[] = [
   { name: "After School Program", href: "/school-solutions/after-school-program" },
   {
     name: "Arduino Inspiration Lab with Training Program",
@@ -388,13 +60,13 @@ const schoolLinks = [
   { name: "Coding and AI Program", href: "/school-solutions/coding-ai-program" },
 ];
 
-const steamLinks = [
+const steamLinks: NavLink[] = [
   { name: "Lego Education for Elementary", href: "/steam/lego-education-elementary" },
   { name: "Lego Education for Middle School", href: "/steam/lego-education-middle" },
   { name: "Lego For High School", href: "/steam/lego-high-school" },
 ];
 
-const scienceLinks = [
+const scienceLinks: NavLink[] = [
   { name: "Grade K-2", href: "/science/grade-k-2" },
   { name: "Grade 3-5", href: "/science/grade-3-5" },
   { name: "Grade 6-8", href: "/science/grade-6-8" },
@@ -405,7 +77,7 @@ const scienceLinks = [
 // --------------------
 interface DropdownProps {
   label: string;
-  links: { name: string; href: string }[];
+  links: NavLink[];
   textColor: string;
   width?: string;
 }
@@ -441,13 +113,27 @@ const Dropdown: React.FC<DropdownProps> = ({
                         ring-1 ring-black/5 z-50 p-4 ${width} max-w-[calc(100vw-1rem)]`}
           >
             {links.map((l) => (
-              <Link
-                key={l.href}
-                to={l.href}
-                className="block px-4 py-2 hover:bg-orange-400 hover:text-white text-gray-700 rounded w-full text-center text-sm"
-              >
-                {l.name}
-              </Link>
+              <div key={l.href} className="flex flex-col text-left">
+                <Link
+                  to="#"
+                  className={`block px-4 py-2  text-center ${l.children ? "text-slate-800 font-medium" : "hover:bg-orange-400 hover:text-white text-gray-700 rounded text-sm"}`}
+                >
+                  {l.name}
+                </Link>
+                {l.children && (
+                  <div className="ml-4 mt-1 flex flex-col gap-1">
+                    {l.children.map((c) => (
+                      <Link
+                        key={c.href}
+                        to="#"
+                        className="block hover:bg-orange-400 hover:text-white text-gray-700 rounded text-sm text-center px-y py-2"
+                      >
+                        {c.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </motion.div>
         )}
@@ -459,13 +145,7 @@ const Dropdown: React.FC<DropdownProps> = ({
 // --------------------
 // Mobile Accordion Section
 // --------------------
-const MobileSection = ({
-  title,
-  links,
-}: {
-  title: string;
-  links: { name: string; href: string }[];
-}) => {
+const MobileSection = ({ title, links }: { title: string; links: NavLink[] }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -476,7 +156,9 @@ const MobileSection = ({
       >
         <span>{title}</span>
         <ChevronDown
-          className={`transition-transform duration-200 ${open ? "rotate-180" : "rotate-0"}`}
+          className={`transition-transform duration-200 ${
+            open ? "rotate-180" : "rotate-0"
+          }`}
           size={20}
         />
       </button>
@@ -491,13 +173,27 @@ const MobileSection = ({
             className="flex flex-col pl-6 mt-2 gap-2"
           >
             {links.map((l) => (
-              <Link
-                key={l.href}
-                to={l.href}
-                className="px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition cursor-pointer text-gray-700"
-              >
-                {l.name}
-              </Link>
+              <div key={l.href} className="flex flex-col">
+                <Link
+                  to={l.href}
+                  className="px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition cursor-pointer text-gray-700"
+                >
+                  {l.name}
+                </Link>
+                {l.children && (
+                  <div className="ml-4 flex flex-col gap-1 mt-1">
+                    {l.children.map((c) => (
+                      <Link
+                        key={c.href}
+                        to={c.href}
+                        className="px-3 py-1 rounded-md hover:bg-orange-400 hover:text-white text-sm text-gray-600"
+                      >
+                        {c.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </motion.div>
         )}
@@ -536,15 +232,32 @@ const NavBar: React.FC = () => {
         >
           <div className="container flex justify-between items-center py-4">
             <Link to="/">
-              <img src="/images/logo/logo.png" alt="logo" className="w-36 sm:w-40 md:w-56" />
+              <img
+                src="/images/logo/logo.png"
+                alt="logo"
+                className="w-36 sm:w-40 md:w-56"
+              />
             </Link>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex gap-4">
-              <Dropdown label="Programs" links={programLinks} textColor={textColor} width="w-[300px]" />
+              <Dropdown
+                label="Programs"
+                links={programLinks}
+                textColor={textColor}
+                width="w-[300px]"
+              />
               <Dropdown label="Camps" links={campLinks} textColor={textColor} />
-              <Dropdown label="Competitions" links={competitionLinks} textColor={textColor} />
-              <Dropdown label="School Solutions" links={schoolLinks} textColor={textColor} />
+              <Dropdown
+                label="Competitions"
+                links={competitionLinks}
+                textColor={textColor}
+              />
+              <Dropdown
+                label="School Solutions"
+                links={schoolLinks}
+                textColor={textColor}
+              />
               <Dropdown label="STEAM" links={steamLinks} textColor={textColor} />
               <Dropdown label="Science" links={scienceLinks} textColor={textColor} />
             </div>
