@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function WhyUsSection() {
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-8 md:py-12 lg:py-16">
+    <section className="relative py-10 md:py-16 lg:py-20">
       {/* Decorative Blur Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>

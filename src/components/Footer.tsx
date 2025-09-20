@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter, FaLinkedinIn, FaYout
 export default function Footer() {
   return (
     <footer className="bg-[#0A1E3F] text-gray-300 py-12">
-      <div className="container grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="container grid grid-cols-2 md:grid-cols-5 gap-8">
         {/* Programs */}
         <div>
           <h4 className="text-white font-semibold mb-4">Programs</h4>

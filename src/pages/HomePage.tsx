@@ -11,6 +11,7 @@ import WhyDursikshya from "@/components/home/WhyDursikshya";
 import OurBrandPartners from "@/components/home/OurBrandPartners";
 import SkillSection from "@/components/home/SkillSection";
 import OurCourses from "@/components/home/OurCourses";
+import PricingSection from "@/components/home/PricingSection";
 // import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
@@ -43,6 +44,8 @@ export default function HomePage() {
       <WhyDursikshya />
 
       <SkillSection />
+
+      <PricingSection />
 
 
       <InfiniteMovingCardsDemo />
