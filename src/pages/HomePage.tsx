@@ -1,5 +1,5 @@
 import HeroSection from "../components/home/HeroSection";
-import Feature_Course from "../components/home/Feature_Course";
+// import Feature_Course from "../components/home/Feature_Course";
 // import LearningMethodologies from "@/components/home/LearningMethodologies";
 import EventGrid from "@/components/home/EventGrid";
 import Banners from "@/components/home/Banners";
