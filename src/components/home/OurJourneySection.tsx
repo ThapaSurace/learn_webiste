@@ -12,7 +12,7 @@ const OurJourneySection = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div>
           <p className="mt-6 max-w-3xl mx-auto text-slate-600 leading-relaxed text-base">
-            STEMpedia is an innovative tech-education ecosystem highly
+            Young Scientist is an innovative tech-education ecosystem highly
             recommended by teachers and embraced by students for classroom
             learning. Designed for kids aged 7-18, our tailored solutions
             provide educators and students with the tools to cultivate coding
