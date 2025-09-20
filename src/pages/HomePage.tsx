@@ -10,6 +10,7 @@ import StatsSection from "@/components/home/StatSection";
 import WhyDursikshya from "@/components/home/WhyDursikshya";
 import OurBrandPartners from "@/components/home/OurBrandPartners";
 import SkillSection from "@/components/home/SkillSection";
+import OurCourses from "@/components/home/OurCourses";
 // import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
@@ -33,7 +34,7 @@ export default function HomePage() {
       <OurBrandPartners />
 
       {/* featured course */}
-      <Feature_Course />
+      <OurCourses />
 
       {/* why us */}
 

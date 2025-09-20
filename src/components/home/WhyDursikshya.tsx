@@ -7,7 +7,7 @@ const options = [
     title: "STEM & AI Accredited Curriculum",
     desc: "Students learn coding using the same platforms as professionals",
     icon: GraduationCap,
-    img: "/images/live-online.jpg",
+    img: "/images/home/courses/1.jpg",
   },
   {
     id: 0,
@@ -61,7 +61,7 @@ export default function WhyDursikshya() {
                     ${
                       selected.id === item.id
                         ? "border-slate-400 bg-gray-700 shadow-md scale-105"
-                        : "border-gray-200 hover:border-slate-400 hover:bg-orange-50 bg-white"
+                        : "border-gray-200 hover:border-slate-400 hover:bg-slate-100 bg-white"
                     }
                   `}
                 >

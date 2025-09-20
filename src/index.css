@@ -117,7 +117,7 @@
 }
 
 .main_heading{
-  @apply text-3xl md:text-4xl font-extrabold font-fredoka text-header 
+  @apply text-3xl md:text-4xl font-extrabold font-fredoka text-blue-950 
 }
 
 

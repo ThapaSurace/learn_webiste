@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 
 export default function OurBrandPartners() {
   // Generate image paths dynamically from 1.png to 18.png
@@ -7,28 +8,33 @@ export default function OurBrandPartners() {
   );
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container">
-        <div className="mb-10">
-          <h2 className="main_heading text-center">Our Brand Partners</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div>
+    <section className="py-10 md:py-16 lg:py-20">
+      <div className="">
+        {/* Section heading */}
+        <div className="mb-10 md:mb-16">
+          <h2 className="main_heading text-center">Schools Who Trusts Us! Join Us for an Unparalleled Education Experience</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+
+        {/* Marquee */}
+        <Marquee
+          gradient={false}        // no fade edges
+          speed={40}              // scroll speed
+          pauseOnHover={true}     // stop on hover
+        >
           {brandImages.map((src, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+              className="mx-6 flex items-center justify-center  cursor-pointer"
             >
               <img
                 src={src}
                 alt={`Brand ${index + 1}`}
-                width={120}
-                height={60}
-                className="object-contain"
+                className="object-contain w-52 sm:w-60 md:w-full"
               />
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </section>
   );
