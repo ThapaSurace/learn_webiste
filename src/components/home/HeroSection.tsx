@@ -76,7 +76,7 @@ const HeroSection = () => {
 
           {/* Paragraph */}
           <p className="text-sm sm:text-base lg:text-lg text-center md:text-left text-slate-500 my-6 max-w-lg">
-            YoungScientist sets your child up for real-world success with
+            Young Scientist sets your child up for real-world success with
             engaging online and offline STEM & Coding programs designed by
             experts.
           </p>

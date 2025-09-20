@@ -105,10 +105,10 @@ export default function StatsSection() {
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center relative z-10">
         {stats.map((stat, index) => (
           <div key={index} className="space-y-2">
-            <p className="text-sm text-orange-700 font-semibold tracking-wide">
+            <p className="text-sm text-orange-600 font-semibold tracking-wide">
               {stat.label}
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold font-fredoka text-indigo-900 relative">
+            <h2 className="text-4xl md:text-5xl font-semibold font-fredoka text-blue-900 relative">
               <span className="t">
                 {stat.value}
               </span>
@@ -119,7 +119,7 @@ export default function StatsSection() {
 
       {/* Decorative gradient line */}
       <div className="mt-16 flex justify-center">
-        <div className="h-1 w-32 bg-gradient-to-r from-sky-700 via-sky-800 to-sky-900 rounded-full"></div>
+        <div className="h-1 w-32 bg-orange-500"></div>
       </div>
     </section>
   );

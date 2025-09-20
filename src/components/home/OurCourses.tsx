@@ -25,12 +25,9 @@ export default function CodingPrograms() {
           Our Instructor-Led Online Coding Classes
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full transition-all duration-500 hover:w-32"></div> 
-        <p className="text-gray-700 mt-6">
-          Structured coding curriculum for ages 8–18
-        </p>
-
+       
         {/* Cards */}
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
           {programs.map((program, index) => (
             <div
               key={index}
