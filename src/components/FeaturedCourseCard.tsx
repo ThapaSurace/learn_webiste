@@ -53,7 +53,7 @@
 
 
 
-import { Button } from "./ui/button";
+
 
 export interface Course {
   id: number;
