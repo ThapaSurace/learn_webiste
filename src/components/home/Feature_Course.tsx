@@ -19,9 +19,9 @@ const Feature_Course = () => {
         <div className="flex justify-center">
           <div className="w-full xl:w-5/12 text-center">
             <p className="text-sm sm:text-base text-primary font-semibold uppercase mb-2 tracking-widest">
-              Featured Courses
+              Young Scientist Courses
             </p>
-            <h2 className="main_heading">LearnWare Programs</h2>
+            <h2 className="main_heading">Young Scientist Programs</h2>
             <div className="w-28 h-1 bg-gradient-to-r from-primary to-orange-400 mx-auto mt-4 rounded-full"></div>
           </div>
         </div>
@@ -34,13 +34,13 @@ const Feature_Course = () => {
                 value="flagship"
                 className="rounded-full px-6 py-2 text-sm sm:text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:shadow"
               >
-                Flagship Course
+                AI Course
               </TabsTrigger>
               <TabsTrigger
                 value="markcamp"
                 className="rounded-full px-6 py-2 text-sm sm:text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:shadow"
               >
-                MarkCamp Course
+                Coding Course
               </TabsTrigger>
             </TabsList>
 

@@ -7,6 +7,7 @@ import { InfiniteMovingCardsDemo } from "@/components/home/Testominal";
 import OurjourneySection from "@/components/home/OurJourneySection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import StatsSection from "@/components/home/StatSection";
+import WhyDursikshya from "@/components/home/WhyDursikshya";
 // import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
@@ -34,7 +35,8 @@ export default function HomePage() {
 
       <WhyUsSection />
 
-      <LearningMethodologies />
+      <WhyDursikshya />
+
 
       <InfiniteMovingCardsDemo />
 

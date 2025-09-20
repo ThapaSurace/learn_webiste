@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
             key={idx}
             className="relative w-[320px] sm:w-[380px] md:w-[420px] shrink-0 
             rounded-2xl border border-gray-200 bg-white shadow-md 
-            px-6 py-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            px-6 py-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             <blockquote>
               {/* Quote */}
