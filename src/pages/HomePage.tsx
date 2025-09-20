@@ -9,6 +9,7 @@ import WhyUsSection from "@/components/home/WhyUsSection";
 import StatsSection from "@/components/home/StatSection";
 import WhyDursikshya from "@/components/home/WhyDursikshya";
 import OurBrandPartners from "@/components/home/OurBrandPartners";
+import SkillSection from "@/components/home/SkillSection";
 // import StatSection from "@/components/home/StatSection";
 
 export default function HomePage() {
@@ -39,6 +40,8 @@ export default function HomePage() {
       <WhyUsSection />
 
       <WhyDursikshya />
+
+      <SkillSection />
 
 
       <InfiniteMovingCardsDemo />
