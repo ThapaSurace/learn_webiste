@@ -1,35 +1,12 @@
 import { useState } from "react";
 import { GraduationCap, Video, UserCheck, Briefcase } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const options = [
-  {
-    id: 1,
-    title: "STEM & AI Accredited Curriculum",
-    desc: "Students learn coding using the same platforms as professionals",
-    icon: GraduationCap,
-    img: "/images/home/courses/1.jpg",
-  },
-  {
-    id: 0,
-    title: "Live online",
-    desc: "1:1 classes with personalized instructors",
-    icon: Video,
-    img: "/images/live-online.jpg",
-  },
-  {
-    id: 2,
-    title: "Top CS teachers",
-    desc: "From across the globe trained by our Expert team to teach coding in English & Nepali",
-    icon: UserCheck,
-    img: "/images/top-teachers.jpg",
-  },
-  {
-    id: 3,
-    title: "Long-term tech career plan",
-    desc: "With visibility into your child’s growth",
-    icon: Briefcase,
-    img: "/images/career-plan.jpg",
-  },
+  { id: 1, title: "STEM & AI Accredited Curriculum", desc: "Students learn coding using the same platforms as professionals", icon: GraduationCap, img: "/images/home/why_dursikshya/1.webp" },
+  { id: 0, title: "Live online", desc: "1:1 classes with personalized instructors", icon: Video, img: "/images/home/why_dursikshya/2.webp" },
+  { id: 2, title: "Top CS teachers", desc: "From across the globe trained by our Expert team to teach coding in English & Nepali", icon: UserCheck, img: "/images/home/why_dursikshya/3.webp" },
+  { id: 3, title: "Long-term tech career plan", desc: "With visibility into your child’s growth", icon: Briefcase, img: "/images/home/why_dursikshya/4.webp" },
 ];
 
 export default function WhyDursikshya() {
@@ -46,11 +23,11 @@ export default function WhyDursikshya() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-12">
+        <div className="flex flex-col md:flex-row items-center gap-16">
           {/* LEFT SIDE: Options */}
           <div className="flex-1 flex flex-col gap-5">
             {options.map((item) => {
-              const Icon = item.icon; // get the Lucide icon component
+              const Icon = item.icon;
               return (
                 <button
                   key={item.id}
@@ -58,14 +35,13 @@ export default function WhyDursikshya() {
                   className={`
                     w-full text-left p-5 rounded-2xl border transition-all duration-300
                     flex items-center gap-4 cursor-pointer
-                    ${
-                      selected.id === item.id
-                        ? "border-slate-400 bg-gray-700 shadow-md scale-105"
-                        : "border-gray-200 hover:border-slate-400 hover:bg-slate-100 bg-white"
+                    ${selected.id === item.id
+                      ? "border-slate-400 bg-gray-700 shadow-md scale-105"
+                      : "border-gray-200 hover:border-slate-400 hover:bg-slate-100 bg-white"
                     }
                   `}
                 >
-                  <div className={`text-3xl rounded-full p-4 ${selected.id === item.id ? " bg-slate-200" : "bg-orange-300 text-white"}`}>
+                  <div className={`text-3xl rounded-full p-4 ${selected.id === item.id ? "bg-slate-200" : "bg-orange-300 text-white"}`}>
                     <Icon />
                   </div>
                   <div>
@@ -79,14 +55,20 @@ export default function WhyDursikshya() {
             })}
           </div>
 
-          {/* RIGHT SIDE: Image */}
+          {/* RIGHT SIDE: Animated Image */}
           <div className="flex-1 flex justify-center">
-            <img
-              key={selected.id}
-              src={selected.img}
-              alt={selected.title}
-              className="max-w-md w-full rounded-xl shadow-2xl transition-transform duration-500 hover:scale-105"
-            />
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={selected.id}
+                src={selected.img}
+                alt={selected.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className=" w-full object-cover object-center"
+              />
+            </AnimatePresence>
           </div>
         </div>
       </div>
