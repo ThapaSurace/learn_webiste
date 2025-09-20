@@ -42,14 +42,14 @@ export default function CodingPrograms() {
                 className="w-full object-cover object-center rounded-t-md"
               />
               <div className="px-6 py-4">
-                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-700">
                   {program.title} <br />
-                  Program
+                 <span> Program</span>
                 </h3>
               </div>
 
               {/* Age Badge at bottom center */}
-              <span className="text-sm absolute -bottom-4 left-1/2 -translate-x-1/2 inline-block px-5 py-1.5 font-medium bg-slate-900 text-white rounded-full shadow">
+              <span className="text-sm absolute -bottom-4 left-1/2 -translate-x-1/2 inline-block px-5 py-1.5 font-medium bg-slate-700 text-white rounded-full shadow">
                 {program.age}
               </span>
             </div>

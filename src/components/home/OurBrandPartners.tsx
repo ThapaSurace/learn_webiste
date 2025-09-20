@@ -18,7 +18,7 @@ export default function OurBrandPartners() {
 
         {/* Marquee */}
         <Marquee
-          gradient={false}        // no fade edges
+          gradient={true}        // no fade edges
           speed={40}              // scroll speed
           pauseOnHover={true}     // stop on hover
         >
@@ -30,7 +30,7 @@ export default function OurBrandPartners() {
               <img
                 src={src}
                 alt={`Brand ${index + 1}`}
-                className="object-contain w-52 sm:w-60 md:w-full"
+                className="object-cover object-center w-52 sm:w-60 md:w-full"
               />
             </div>
           ))}
